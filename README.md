@@ -5,7 +5,7 @@ A python script to check if the website is vulnerable of clickjacking and create
 ### Usage
 
 ```
-python(3) clickjacking_tester.py <file_name>
+python click-jacking-tester.py <file_name>
 ```
 
 ### Example
@@ -15,7 +15,7 @@ python(3) clickjacking_tester.py <file_name>
 ##### Input
 
 ```
-python clickjacking_tester.py sites.txt
+python click-jacking-tester.py sites.txt
 ```
 
 ##### sites.txt
