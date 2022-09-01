@@ -1,5 +1,5 @@
 import contextlib
-from urllib.request import urlopen
+import requests
 from urllib.parse import urlparse
 from sys import argv, exit
 
@@ -12,9 +12,9 @@ def check(url):
     with contextlib.suppress(Exception):
         if "http" not in url:
             url = f"https://{url}"
-        data = urlopen(url)
+        response = requests.get(url)
         domain = urlparse(url).netloc
-        headers = data.info()
+        headers = response.headers
         if "X-Frame-Options" not in headers:
             print(f"\t\t[bold red]Website {domain} is vulnerable! :vampire:")
             create_poc(url)
