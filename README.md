@@ -9,6 +9,8 @@ python(3) clickjacking_tester.py <file_name>
 ```
 
 ### Example
+![demo](https://github.com/ShreehariVaasishta/click-jacking-tester/blob/main/image.png)
+
 
 ##### Input
 
